@@ -65,7 +65,7 @@ def get_config(filename, key):
 
 
 def remove_classification_number(c):
-    return re.sub(r'_[0-9]{1,3}[a-z]$', '', c)
+    return re.sub(r'(_detailed)?_[0-9]{1,3}[a-z]$', '', c)
 
 
 def get_input_classification_combinations(input_classifications, num_vars):

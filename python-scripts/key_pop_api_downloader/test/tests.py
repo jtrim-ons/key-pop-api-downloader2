@@ -14,11 +14,15 @@ class Tests(unittest.TestCase):
         with self.assertRaises(ValueError):
             pgp.age_band_text_to_numbers("Aged 45 to 49")
 
-    def test_remove_classification_number(self):
+    def test_remove_classification_number_resident_age(self):
         for c in ['resident_age_4b', 'resident_age_23a', 'resident_age']:
             self.assertEqual(pgp.remove_classification_number(c), 'resident_age')
             self.assertEqual(pgp.remove_classification_number(c), 'resident_age')
             self.assertEqual(pgp.remove_classification_number(c), 'resident_age')
+
+    def test_remove_classification_number_main_language(self):
+        for c in ['main_language_23a', 'main_language_detailed_26a']:
+            self.assertEqual(pgp.remove_classification_number(c), 'main_language')
 
     def test_get_input_classification_combinations(self):
         classifications = [
