@@ -10,6 +10,7 @@ country_of_birth_22a
 residence_length_6b
 main_language_11a
 main_language_23a
+main_language_detailed_26a
 national_identity_all_4a
 national_identity_all_9a
 passports_all_4a
