@@ -1,0 +1,249 @@
+[
+  {
+    "code": "resident_age_18b",
+    "label": null,
+    "categories": null,
+    "bacap_code": "resident_age"
+  },
+  {
+    "code": "sex",
+    "label": null,
+    "categories": null,
+    "bacap_code": "sex"
+  },
+  {
+    "code": "legal_partnership_status_6a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "legal_partnership_status"
+  },
+  {
+    "code": "country_of_birth_3a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "country_of_birth"
+  },
+  {
+    "code": "passports_all_4a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "passports_all"
+  },
+  {
+    "code": "residence_length_6b",
+    "label": null,
+    "categories": null,
+    "bacap_code": "residence_length"
+  },
+  {
+    "code": "ethnic_group_tb_6a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "ethnic_group_tb"
+  },
+  {
+    "code": "national_identity_all_4a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "national_identity_all"
+  },
+  {
+    "code": "religion_tb",
+    "label": null,
+    "categories": null,
+    "bacap_code": "religion_tb"
+  },
+  {
+    "code": "health_in_general",
+    "label": null,
+    "categories": null,
+    "bacap_code": "health_in_general"
+  },
+  {
+    "code": "disability_3a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "disability"
+  },
+  {
+    "code": "is_carer_5a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "is_carer"
+  },
+  {
+    "code": "english_proficiency",
+    "label": null,
+    "categories": [
+      {
+        "label": "Main language is English (English or Welsh in Wales)",
+        "cells": [1]
+      },
+      {
+        "label": "Can speak English very well",
+        "cells": [2]
+      },
+      {
+        "label": "Can speak English well",
+        "cells": [3]
+      },
+      {
+        "label": "Cannot speak English well",
+        "cells": [4]
+      },
+      {
+        "label": "Cannot speak English",
+        "cells": [5]
+      }
+    ],
+    "bacap_code": "english_proficiency"
+  },
+  {
+    "code": "workplace_travel_8a",
+    "label": null,
+    "categories": [
+      {
+        "label": "Less than 10km",
+        "cells": [1, 2]
+      },
+      {
+        "label": "10km to less than 30km",
+        "cells": [3]
+      },
+      {
+        "label": "30km and over",
+        "cells": [4, 5]
+      },
+      {
+        "label": "Works mainly from home",
+        "cells": [6]
+      },
+      {
+        "label": "Other",
+        "cells": [7]
+      }
+    ],
+    "bacap_code": "workplace_travel"
+  },
+  {
+    "code": "transport_to_workplace_12a",
+    "label": null,
+    "categories": [
+      {
+        "label": "Work mainly at or from home",
+        "cells": [1]
+      },
+      {
+        "label": "Underground, metro, light rail, tram",
+        "cells": [2]
+      },
+      {
+        "label": "Train",
+        "cells": [3]
+      },
+      {
+        "label": "Bus, minibus or coach",
+        "cells": [4]
+      },
+      {
+        "label": "Taxi",
+        "cells": [5]
+      },
+      {
+        "label": "Motorcycle, scooter or moped",
+        "cells": [6]
+      },
+      {
+        "label": "Driving a car or van",
+        "cells": [7]
+      },
+      {
+        "label": "Passenger in a car or van",
+        "cells": [8]
+      },
+      {
+        "label": "Bicycle",
+        "cells": [9]
+      },
+      {
+        "label": "On foot",
+        "cells": [10]
+      },
+      {
+        "label": "Other method of travel to work",
+        "cells": [11]
+      }
+    ],
+    "bacap_code": "transport_to_workplace"
+  },
+  {
+    "code": "economic_activity_status_4a",
+    "label": null,
+    "categories": [
+      {
+        "label": "Economically active: In employment",
+        "cells": [1]
+      },
+      {
+        "label": "Economically active: Unemployed",
+        "cells": [2]
+      },
+      {
+        "label": "Economically inactive",
+        "cells": [3]
+      }
+    ],
+    "bacap_code": "economic_activity"
+  },
+  {
+    "code": "has_ever_worked",
+    "label": null,
+    "categories": null,
+    "bacap_code": "has_ever_worked"
+  },
+  {
+    "code": "occupation_current_10a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "occupation_current"
+  },
+  {
+    "code": "ns_sec_10a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "ns_sec"
+  },
+  {
+    "code": "hours_per_week_worked",
+    "label": null,
+    "categories": null,
+    "bacap_code": "hours_per_week_worked"
+  },
+  {
+    "code": "highest_qualification",
+    "label": null,
+    "categories": [
+      {
+        "label": "No qualifications",
+        "cells": [0]
+      },
+      {
+        "label": "Level 1, 2 or 3 qualifications",
+        "cells": [1, 2, 4]
+      },
+      {
+        "label": "Apprenticeship",
+        "cells": [3]
+      },
+      {
+        "label": "Level 4 qualifications and above",
+        "cells": [5]
+      },
+      {
+        "label": "Other qualifications",
+        "cells": [6]
+      }
+    ],
+    "bacap_code": "highest_qualification"
+  }
+]
