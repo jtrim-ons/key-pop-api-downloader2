@@ -176,9 +176,12 @@ def generate_one_dataset(data, total_pops_data, cc, category_list):
             for cat in output_categories
         ]
         overall_total = sum(cat_totals)
-        for cat, cat_total in zip(output_categories, cat_totals):
-            result[c]["count"].append(cat_total)
-            result[c]["percent"].append(calc_percent(cat_total, overall_total))
+        if overall_total == 0:
+            result[c] = "all_zero"
+        else:
+            for cat, cat_total in zip(output_categories, cat_totals):
+                result[c]["count"].append(cat_total)
+                result[c]["percent"].append(calc_percent(cat_total, overall_total))
 
     if len(cc) > 0:
         if total_pops_data['blocked']:
