@@ -171,11 +171,12 @@ def generate_one_dataset(data, total_pops_data, cc, category_list):
             continue
         output_categories = output_classification_details_dict[c]['categories']
         result[c] = {"count": [], "percent": []}
-        overall_total = 0
-        for cat in output_categories:
-            overall_total += sum_of_cell_values(dataset, cc, category_list, c, cat['cells'])
-        for cat in output_categories:
-            cat_total = sum_of_cell_values(dataset, cc, category_list, c, cat['cells'])
+        cat_totals = [
+            sum_of_cell_values(dataset, cc, category_list, c, cat['cells'])
+            for cat in output_categories
+        ]
+        overall_total = sum(cat_totals)
+        for cat, cat_total in zip(output_categories, cat_totals):
             result[c]["count"].append(cat_total)
             result[c]["percent"].append(calc_percent(cat_total, overall_total))
 
