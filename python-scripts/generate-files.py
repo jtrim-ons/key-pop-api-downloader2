@@ -65,6 +65,25 @@ def make_datum_key_for_pop_totals(cc, category_list):
     ])
 
 
+def input_age_range(cc, category_list):
+    for i, classification in enumerate(cc):
+        if pgp.remove_classification_number(classification) == "resident_age":
+            return pgp.age_band_text_to_numbers(category_list[i]["label"])
+    return [0, 999]
+
+
+def nests_nicely(c, input_age_range):
+    if pgp.remove_classification_number(c) != "resident_age":
+        return True
+    for category in all_classifications[c]['categories']:
+        age_band = pgp.age_band_text_to_numbers(category['label'])
+        if age_band[0] < input_age_range[0] and age_band[1] >= input_age_range[0]:
+            return False
+        if age_band[0] <= input_age_range[1] and age_band[1] > input_age_range[1]:
+            return False
+    return True
+
+
 def sum_of_cell_values(dataset, cc, category_list, c, cell_ids):
     """For a given set of input categories and a given output category, return the sum of counts in that output category.
 
@@ -86,8 +105,15 @@ def sum_of_cell_values(dataset, cc, category_list, c, cell_ids):
     int
         The total of the counts.
     """
+    input_ages = input_age_range(cc, category_list)
+    if not nests_nicely(c, input_ages):
+        return 0
     total = 0
     for cell_id in cell_ids:
+        if pgp.remove_classification_number(c) == "resident_age":
+            output_ages = pgp.age_band_text_to_numbers(all_classifications[c]['categories_map'][str(cell_id)])
+            if output_ages[0] < input_ages[0] or output_ages[1] > input_ages[1]:
+                continue
         datum_key = make_datum_key(cc, category_list, c, cell_id)
         total += dataset['data'][datum_key]
     return total
@@ -281,7 +307,7 @@ def generate_files(num_vars, unblocked_combination_counts):
                 # The API won't give data for two versions of the same variable.
                 # Since we haven't downloaded it, we can't use it to generate files :-)
                 # The exception is for resident_age, which is a special case where
-                # we just use the data for 18 categories.
+                # we just use the data for 18 or 23 categories.
                 continue
             c_str_len, c_str = make_c_str(cc, c)
             print("{} var: Processing {} of {} ({})".format(num_vars, i+1, len(icc), c_str))
