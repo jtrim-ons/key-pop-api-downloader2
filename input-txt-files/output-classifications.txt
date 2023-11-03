@@ -20,3 +20,16 @@ occupation_current_10a
 ns_sec_10a
 hours_per_week_worked
 highest_qualification
+hh_size_5a
+hh_family_composition_6a
+hh_deprivation
+accommodation_type_3a
+number_bedrooms_5a
+occupancy_rating_bedrooms_6a
+hh_tenure_5a
+number_of_cars_5a
+hh_dependent_children_3a
+hh_families_type_6a
+hh_multi_language_3a
+hh_disabled_4a
+heating_type_3a
