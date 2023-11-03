@@ -13,7 +13,7 @@ def load_output_classification_details(all_classifications):
             item["categories"] = [
                 {"label": cat["label"], "cells": [int(cat["id"])]}
                 for cat in all_classifications[item["code"]]["categories"]
-                if cat["id"] != "-8"
+                if cat["id"] not in ["-8", "-9"]
             ]
     return {var["code"]: var for var in output_classification_details}
 
