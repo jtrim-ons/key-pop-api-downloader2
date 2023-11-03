@@ -3,6 +3,7 @@
 import copy
 import glob
 import json
+import key_pop_api_downloader as pgp
 
 poptypes = ["UR", "UR_HH"]
 
@@ -36,3 +37,15 @@ with open('generated/all-classifications-by-poptype.json', 'w') as f:
 
 with open('generated/all-classifications.json', 'w') as f:
     json.dump(all_classifications, f)
+
+input_classifications, output_classifications = pgp.load_input_and_output_classification_codes()
+used_classifications = set(input_classifications + output_classifications)
+
+all_used_classifications = {
+    key: val
+    for key, val in all_classifications.items()
+    if key in used_classifications
+}
+
+with open('generated/all-used-classifications.json', 'w') as f:
+    json.dump(all_used_classifications, f)
