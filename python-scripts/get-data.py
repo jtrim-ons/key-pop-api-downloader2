@@ -30,6 +30,10 @@ def get_file(compressed_file_path, url, config):
     time.sleep(0.5)
 
 
+def has_any_household_vars(classification_codes, all_classifications):
+    return any('UR' not in all_classifications[c]['poptypes'] for c in classification_codes)
+
+
 def get_files(num_vars, config):
     """Download from the API, gzip and save all the data files with `num_vars` input variables.
 
@@ -46,7 +50,11 @@ def get_files(num_vars, config):
     for cc in input_classification_combinations:
         if num_vars > 0:
             c_str = ",".join(cc)
-            url = config["url_pattern"].format(c_str)
+            url = config["url_pattern"].format(
+                "UR_HH" if has_any_household_vars(cc, config["all_classifications"]) else "UR",
+                c_str
+            )
+            print(url)
             compressed_file_path = 'downloaded/{}var/{}.json.gz'.format(num_vars, c_str.replace(',', '-'))
             get_file(compressed_file_path, url, config)
         for c in config["output_classifications"]:
@@ -54,7 +62,11 @@ def get_files(num_vars, config):
                 # The API won't give data for two versions of the same variable
                 continue
             c_str = ",".join(list(cc) + [c])
-            url = config["url_pattern"].format(c_str)
+            url = config["url_pattern"].format(
+                "UR_HH" if has_any_household_vars(list(cc) + [c], config["all_classifications"]) else "UR",
+                c_str
+            )
+            print(url)
             compressed_file_path = 'downloaded/{}var/{}.json.gz'.format(num_vars, c_str.replace(',', '-'))
             get_file(compressed_file_path, url, config)
 
@@ -65,7 +77,8 @@ def main():
         "url_pattern": pgp.get_config("input-txt-files/config.json", "national_url_pattern"),
         "skip_existing_files": '--skip-existing' in sys.argv,
         "input_classifications": input_classifications,
-        "output_classifications": output_classifications
+        "output_classifications": output_classifications,
+        "all_classifications": pgp.load_all_classifications()
     }
     max_var_selections = pgp.get_config("input-txt-files/config.json", "max_var_selections")
 
