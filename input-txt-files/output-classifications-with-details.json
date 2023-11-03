@@ -324,5 +324,134 @@
       }
     ],
     "bacap_code": "highest_qualification"
+  },
+  {
+    "code": "hh_size_5a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "hh_size"
+  },
+  {
+    "code": "hh_family_composition_6a",
+    "label": null,
+    "categories": [
+      {
+        "label": "One person household",
+        "cells": [1]
+      },
+      {
+        "label": "Single family household",
+        "cells": [2, 3, 4]
+      },
+      {
+        "label": "Other household types",
+        "cells": [5]
+      }
+    ],
+    "bacap_code": "hh_family_composition"
+  },
+  {
+    "code": "hh_deprivation",
+    "label": null,
+    "categories": null,
+    "bacap_code": "hh_deprivation"
+  },
+  {
+    "code": "accommodation_type_3a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "accommodation_type"
+  },
+  {
+    "code": "number_bedrooms_5a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "number_bedrooms"
+  },
+  {
+    "code": "occupancy_rating_bedrooms_6a",
+    "label": null,
+    "categories": [
+      {
+        "label": "+2 or more",
+        "cells": [1]
+      },
+      {
+        "label": "+1",
+        "cells": [2]
+      },
+      {
+        "label": "0",
+        "cells": [3]
+      },
+      {
+        "label": "-1",
+        "cells": [4]
+      },
+      {
+        "label": "-2 or less",
+        "cells": [5]
+      }
+    ],
+    "bacap_code": "occupancy_rating_bedrooms"
+  },
+  {
+    "code": "hh_tenure_5a",
+    "label": null,
+    "categories": [
+      {
+        "label": "Owns outright",
+        "cells": [0]
+      },
+      {
+        "label": "Owns with a mortgage or loan or shared ownership",
+        "cells": [1]
+      },
+      {
+        "label": "Social rented",
+        "cells": [2]
+      },
+      {
+        "label": "Private rented or lives rent free",
+        "cells": [3]
+      }
+    ],
+    "bacap_code": "hh_tenure"
+  },
+  {
+    "code": "number_of_cars_5a",
+    "label": null,
+    "categories": null,
+    "bacap_code": "number_of_cars"
+  },
+  {
+    "code": "hh_dependent_children_3a",
+    "label": null,
+    "categories": null,
+    "bacap_code": null
+  },
+  {
+    "code": "hh_families_type_6a",
+    "label": null,
+    "categories": null,
+    "bacap_code": null
+  },
+  {
+    "code": "hh_multi_language_3a",
+    "label": null,
+    "categories": null,
+    "bacap_code": null
+  },
+  {
+    "code": "hh_disabled_4a",
+    "label": null,
+    "categories": null,
+    "bacap_code": null
+  },
+  {
+    "code": "heating_type_3a",
+    "label": "Central heating",
+    "categories": null,
+    "bacap_code": null
   }
 ]
