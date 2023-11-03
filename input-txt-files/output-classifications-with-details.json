@@ -3,152 +3,206 @@
     "code": "resident_age_18b",
     "label": null,
     "categories": null,
-    "bacap_code": "resident_age"
+    "bacap_code": "resident_age",
+    "populationBase": "all people"
   },
   {
     "code": "resident_age_23a",
     "label": null,
     "categories": [
-        {
-            "label": "Aged 4 years and under",
-            "cells": [ 1, 2 ]
-        },
-        {
-            "label": "Aged 5 to 9 years",
-            "cells": [ 3, 4 ]
-        },
-        {
-            "label": "Aged 10 to 14 years",
-            "cells": [ 5 ]
-        },
-        {
-            "label": "Aged 15 to 19 years",
-            "cells": [ 6, 7, 8 ]
-        },
-        {
-            "label": "Aged 20 to 24 years",
-            "cells": [ 9 ]
-        },
-        {
-            "label": "Aged 25 to 29 years",
-            "cells": [ 10 ]
-        },
-        {
-            "label": "Aged 30 to 34 years",
-            "cells": [ 11 ]
-        },
-        {
-            "label": "Aged 35 to 39 years",
-            "cells": [ 12 ]
-        },
-        {
-            "label": "Aged 40 to 44 years",
-            "cells": [ 13 ]
-        },
-        {
-            "label": "Aged 45 to 49 years",
-            "cells": [ 14 ]
-        },
-        {
-            "label": "Aged 50 to 54 years",
-            "cells": [ 15 ]
-        },
-        {
-            "label": "Aged 55 to 59 years",
-            "cells": [ 16 ]
-        },
-        {
-            "label": "Aged 60 to 64 years",
-            "cells": [ 17 ]
-        },
-        {
-            "label": "Aged 65 to 69 years",
-            "cells": [ 18, 19 ]
-        },
-        {
-            "label": "Aged 70 to 74 years",
-            "cells": [ 20 ]
-        },
-        {
-            "label": "Aged 75 to 79 years",
-            "cells": [ 21 ]
-        },
-        {
-            "label": "Aged 80 to 84 years",
-            "cells": [ 22 ]
-        },
-        {
-            "label": "Aged 85 years and over",
-            "cells": [ 23 ]
-        }
+      {
+        "label": "Aged 4 years and under",
+        "cells": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "Aged 5 to 9 years",
+        "cells": [
+          3,
+          4
+        ]
+      },
+      {
+        "label": "Aged 10 to 14 years",
+        "cells": [
+          5
+        ]
+      },
+      {
+        "label": "Aged 15 to 19 years",
+        "cells": [
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "label": "Aged 20 to 24 years",
+        "cells": [
+          9
+        ]
+      },
+      {
+        "label": "Aged 25 to 29 years",
+        "cells": [
+          10
+        ]
+      },
+      {
+        "label": "Aged 30 to 34 years",
+        "cells": [
+          11
+        ]
+      },
+      {
+        "label": "Aged 35 to 39 years",
+        "cells": [
+          12
+        ]
+      },
+      {
+        "label": "Aged 40 to 44 years",
+        "cells": [
+          13
+        ]
+      },
+      {
+        "label": "Aged 45 to 49 years",
+        "cells": [
+          14
+        ]
+      },
+      {
+        "label": "Aged 50 to 54 years",
+        "cells": [
+          15
+        ]
+      },
+      {
+        "label": "Aged 55 to 59 years",
+        "cells": [
+          16
+        ]
+      },
+      {
+        "label": "Aged 60 to 64 years",
+        "cells": [
+          17
+        ]
+      },
+      {
+        "label": "Aged 65 to 69 years",
+        "cells": [
+          18,
+          19
+        ]
+      },
+      {
+        "label": "Aged 70 to 74 years",
+        "cells": [
+          20
+        ]
+      },
+      {
+        "label": "Aged 75 to 79 years",
+        "cells": [
+          21
+        ]
+      },
+      {
+        "label": "Aged 80 to 84 years",
+        "cells": [
+          22
+        ]
+      },
+      {
+        "label": "Aged 85 years and over",
+        "cells": [
+          23
+        ]
+      }
     ],
-    "bacap_code": "resident_age"
+    "bacap_code": "resident_age",
+    "populationBase": "all people"
   },
   {
     "code": "sex",
     "label": null,
     "categories": null,
-    "bacap_code": "sex"
+    "bacap_code": "sex",
+    "populationBase": "all people"
   },
   {
     "code": "legal_partnership_status_6a",
     "label": null,
     "categories": null,
-    "bacap_code": "legal_partnership_status"
+    "bacap_code": "legal_partnership_status",
+    "populationBase": "people aged 16 years and over"
   },
   {
     "code": "country_of_birth_3a",
     "label": null,
     "categories": null,
-    "bacap_code": "country_of_birth"
+    "bacap_code": "country_of_birth",
+    "populationBase": "all people"
   },
   {
     "code": "passports_all_4a",
     "label": null,
     "categories": null,
-    "bacap_code": "passports_all"
+    "bacap_code": "passports_all",
+    "populationBase": "all people"
   },
   {
     "code": "residence_length_6b",
     "label": null,
     "categories": null,
-    "bacap_code": "residence_length"
+    "bacap_code": "residence_length",
+    "populationBase": "all people"
   },
   {
     "code": "ethnic_group_tb_6a",
     "label": null,
     "categories": null,
-    "bacap_code": "ethnic_group_tb"
+    "bacap_code": "ethnic_group_tb",
+    "populationBase": "all people"
   },
   {
     "code": "national_identity_all_4a",
     "label": null,
     "categories": null,
-    "bacap_code": "national_identity_all"
+    "bacap_code": "national_identity_all",
+    "populationBase": "all people"
   },
   {
     "code": "religion_tb",
     "label": null,
     "categories": null,
-    "bacap_code": "religion_tb"
+    "bacap_code": "religion_tb",
+    "populationBase": "all people"
   },
   {
     "code": "health_in_general",
     "label": null,
     "categories": null,
-    "bacap_code": "health_in_general"
+    "bacap_code": "health_in_general",
+    "populationBase": "all people"
   },
   {
     "code": "disability_3a",
     "label": null,
     "categories": null,
-    "bacap_code": "disability"
+    "bacap_code": "disability",
+    "populationBase": "all people"
   },
   {
     "code": "is_carer_5a",
     "label": null,
     "categories": null,
-    "bacap_code": "is_carer"
+    "bacap_code": "is_carer",
+    "populationBase": "people aged five years and over"
   },
   {
     "code": "english_proficiency",
@@ -156,26 +210,37 @@
     "categories": [
       {
         "label": "Main language is English (English or Welsh in Wales)",
-        "cells": [1]
+        "cells": [
+          1
+        ]
       },
       {
         "label": "Can speak English very well",
-        "cells": [2]
+        "cells": [
+          2
+        ]
       },
       {
         "label": "Can speak English well",
-        "cells": [3]
+        "cells": [
+          3
+        ]
       },
       {
         "label": "Cannot speak English well",
-        "cells": [4]
+        "cells": [
+          4
+        ]
       },
       {
         "label": "Cannot speak English",
-        "cells": [5]
+        "cells": [
+          5
+        ]
       }
     ],
-    "bacap_code": "english_proficiency"
+    "bacap_code": "english_proficiency",
+    "populationBase": "people aged three years and over"
   },
   {
     "code": "workplace_travel_8a",
@@ -183,26 +248,39 @@
     "categories": [
       {
         "label": "Less than 10km",
-        "cells": [1, 2]
+        "cells": [
+          1,
+          2
+        ]
       },
       {
         "label": "10km to less than 30km",
-        "cells": [3]
+        "cells": [
+          3
+        ]
       },
       {
         "label": "30km and over",
-        "cells": [4, 5]
+        "cells": [
+          4,
+          5
+        ]
       },
       {
         "label": "Works mainly from home",
-        "cells": [6]
+        "cells": [
+          6
+        ]
       },
       {
         "label": "Other",
-        "cells": [7]
+        "cells": [
+          7
+        ]
       }
     ],
-    "bacap_code": "workplace_travel"
+    "bacap_code": "workplace_travel",
+    "populationBase": "people aged 16 years and over in employment"
   },
   {
     "code": "transport_to_workplace_12a",
@@ -210,50 +288,73 @@
     "categories": [
       {
         "label": "Work mainly at or from home",
-        "cells": [1]
+        "cells": [
+          1
+        ]
       },
       {
         "label": "Underground, metro, light rail, tram",
-        "cells": [2]
+        "cells": [
+          2
+        ]
       },
       {
         "label": "Train",
-        "cells": [3]
+        "cells": [
+          3
+        ]
       },
       {
         "label": "Bus, minibus or coach",
-        "cells": [4]
+        "cells": [
+          4
+        ]
       },
       {
         "label": "Taxi",
-        "cells": [5]
+        "cells": [
+          5
+        ]
       },
       {
         "label": "Motorcycle, scooter or moped",
-        "cells": [6]
+        "cells": [
+          6
+        ]
       },
       {
         "label": "Driving a car or van",
-        "cells": [7]
+        "cells": [
+          7
+        ]
       },
       {
         "label": "Passenger in a car or van",
-        "cells": [8]
+        "cells": [
+          8
+        ]
       },
       {
         "label": "Bicycle",
-        "cells": [9]
+        "cells": [
+          9
+        ]
       },
       {
         "label": "On foot",
-        "cells": [10]
+        "cells": [
+          10
+        ]
       },
       {
         "label": "Other method of travel to work",
-        "cells": [11]
+        "cells": [
+          11
+        ]
       }
     ],
-    "bacap_code": "transport_to_workplace"
+    "bacap_code": "transport_to_workplace",
+    "populationBase": "people aged 16 years and over in employment"
   },
   {
     "code": "economic_activity_status_4a",
@@ -261,42 +362,53 @@
     "categories": [
       {
         "label": "Economically active: In employment",
-        "cells": [1]
+        "cells": [
+          1
+        ]
       },
       {
         "label": "Economically active: Unemployed",
-        "cells": [2]
+        "cells": [
+          2
+        ]
       },
       {
         "label": "Economically inactive",
-        "cells": [3]
+        "cells": [
+          3
+        ]
       }
     ],
-    "bacap_code": "economic_activity"
+    "bacap_code": "economic_activity",
+    "populationBase": "people aged 16 years and over"
   },
   {
     "code": "has_ever_worked",
     "label": null,
     "categories": null,
-    "bacap_code": "has_ever_worked"
+    "bacap_code": "has_ever_worked",
+    "populationBase": "people aged 16 years and over not in employment"
   },
   {
     "code": "occupation_current_10a",
     "label": null,
     "categories": null,
-    "bacap_code": "occupation_current"
+    "bacap_code": "occupation_current",
+    "populationBase": "people aged 16 years and over in employment"
   },
   {
     "code": "ns_sec_10a",
     "label": null,
     "categories": null,
-    "bacap_code": "ns_sec"
+    "bacap_code": "ns_sec",
+    "populationBase": "people aged 16 years and over"
   },
   {
     "code": "hours_per_week_worked",
     "label": null,
     "categories": null,
-    "bacap_code": "hours_per_week_worked"
+    "bacap_code": "hours_per_week_worked",
+    "populationBase": "people aged 16 years and over in employment"
   },
   {
     "code": "highest_qualification",
@@ -304,32 +416,46 @@
     "categories": [
       {
         "label": "No qualifications",
-        "cells": [0]
+        "cells": [
+          0
+        ]
       },
       {
         "label": "Level 1, 2 or 3 qualifications",
-        "cells": [1, 2, 4]
+        "cells": [
+          1,
+          2,
+          4
+        ]
       },
       {
         "label": "Apprenticeship",
-        "cells": [3]
+        "cells": [
+          3
+        ]
       },
       {
         "label": "Level 4 qualifications and above",
-        "cells": [5]
+        "cells": [
+          5
+        ]
       },
       {
         "label": "Other qualifications",
-        "cells": [6]
+        "cells": [
+          6
+        ]
       }
     ],
-    "bacap_code": "highest_qualification"
+    "bacap_code": "highest_qualification",
+    "populationBase": "people aged 16 years and over"
   },
   {
     "code": "hh_size_5a",
     "label": null,
     "categories": null,
-    "bacap_code": "hh_size"
+    "bacap_code": "hh_size",
+    "populationBase": "all people in households"
   },
   {
     "code": "hh_family_composition_6a",
@@ -337,36 +463,48 @@
     "categories": [
       {
         "label": "One person household",
-        "cells": [1]
+        "cells": [
+          1
+        ]
       },
       {
         "label": "Single family household",
-        "cells": [2, 3, 4]
+        "cells": [
+          2,
+          3,
+          4
+        ]
       },
       {
         "label": "Other household types",
-        "cells": [5]
+        "cells": [
+          5
+        ]
       }
     ],
-    "bacap_code": "hh_family_composition"
+    "bacap_code": "hh_family_composition",
+    "populationBase": "all people in households"
   },
   {
     "code": "hh_deprivation",
     "label": null,
     "categories": null,
-    "bacap_code": "hh_deprivation"
+    "bacap_code": "hh_deprivation",
+    "populationBase": "all people in households"
   },
   {
     "code": "accommodation_type_3a",
     "label": null,
     "categories": null,
-    "bacap_code": "accommodation_type"
+    "bacap_code": "accommodation_type",
+    "populationBase": "all people in households"
   },
   {
     "code": "number_bedrooms_5a",
     "label": null,
     "categories": null,
-    "bacap_code": "number_bedrooms"
+    "bacap_code": "number_bedrooms",
+    "populationBase": "all people in households"
   },
   {
     "code": "occupancy_rating_bedrooms_6a",
@@ -374,26 +512,37 @@
     "categories": [
       {
         "label": "+2 or more",
-        "cells": [1]
+        "cells": [
+          1
+        ]
       },
       {
         "label": "+1",
-        "cells": [2]
+        "cells": [
+          2
+        ]
       },
       {
         "label": "0",
-        "cells": [3]
+        "cells": [
+          3
+        ]
       },
       {
         "label": "-1",
-        "cells": [4]
+        "cells": [
+          4
+        ]
       },
       {
         "label": "-2 or less",
-        "cells": [5]
+        "cells": [
+          5
+        ]
       }
     ],
-    "bacap_code": "occupancy_rating_bedrooms"
+    "bacap_code": "occupancy_rating_bedrooms",
+    "populationBase": "all people in households"
   },
   {
     "code": "hh_tenure_5a",
@@ -401,57 +550,72 @@
     "categories": [
       {
         "label": "Owns outright",
-        "cells": [0]
+        "cells": [
+          0
+        ]
       },
       {
         "label": "Owns with a mortgage or loan or shared ownership",
-        "cells": [1]
+        "cells": [
+          1
+        ]
       },
       {
         "label": "Social rented",
-        "cells": [2]
+        "cells": [
+          2
+        ]
       },
       {
         "label": "Private rented or lives rent free",
-        "cells": [3]
+        "cells": [
+          3
+        ]
       }
     ],
-    "bacap_code": "hh_tenure"
+    "bacap_code": "hh_tenure",
+    "populationBase": "all people in households"
   },
   {
     "code": "number_of_cars_5a",
     "label": null,
     "categories": null,
-    "bacap_code": "number_of_cars"
+    "bacap_code": "number_of_cars",
+    "populationBase": "all people in households"
   },
   {
     "code": "hh_dependent_children_3a",
     "label": null,
     "categories": null,
-    "bacap_code": null
+    "bacap_code": null,
+    "populationBase": "all people in households"
   },
   {
     "code": "hh_families_type_6a",
     "label": null,
     "categories": null,
-    "bacap_code": null
+    "bacap_code": null,
+    "populationBase": "all people in households"
   },
   {
     "code": "hh_multi_language_3a",
     "label": null,
     "categories": null,
-    "bacap_code": null
+    "bacap_code": null,
+    "populationBase": "all people in households"
   },
   {
     "code": "hh_disabled_4a",
     "label": null,
     "categories": null,
-    "bacap_code": null
+    "bacap_code": null,
+    "populationBase": "all people in households"
   },
   {
     "code": "heating_type_3a",
     "label": "Central heating",
     "categories": null,
-    "bacap_code": null
+    "bacap_code": null,
+    "populationBase": "all people in households"
   }
 ]
