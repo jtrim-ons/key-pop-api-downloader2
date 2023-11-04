@@ -453,7 +453,24 @@
   {
     "code": "hh_size_5a",
     "label": null,
-    "categories": null,
+    "categories": [
+      {
+        "label": "1 person in household",
+        "cells": [1]
+      },
+      {
+        "label": "2 people in household",
+        "cells": [2]
+      },
+      {
+        "label": "3 people in household",
+        "cells": [3]
+      },
+      {
+        "label": "4 or more people in household",
+        "cells": [4]
+      }
+    ],
     "bacap_code": "hh_size",
     "populationBase": "all people in households"
   },
