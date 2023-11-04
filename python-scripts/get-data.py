@@ -30,8 +30,23 @@ def get_file(compressed_file_path, url, config):
     time.sleep(0.5)
 
 
+def is_household_var(classification_code, all_classifications):
+    expected_result = any(
+        classification_code.startswith(prefix)
+        for prefix in [
+            'hh_', 'accommodation_type', 'number_bedrooms', 'occupancy_rating_bedrooms',
+            'number_of_cars', 'heating_type'
+        ]
+    )
+    result = 'UR' not in all_classifications[classification_code]['poptypes']
+    if expected_result != result:
+        # To be extra-cautious, we test it two ways and make sure they're consistent
+        raise Exception('Unexpected is_household_var() result for ' + classification_code)
+    return result
+
+
 def has_any_household_vars(classification_codes, all_classifications):
-    return any('UR' not in all_classifications[c]['poptypes'] for c in classification_codes)
+    return any(is_household_var(c, all_classifications) for c in classification_codes)
 
 
 def get_files(num_vars, config):
