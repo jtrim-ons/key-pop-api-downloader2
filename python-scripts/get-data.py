@@ -24,7 +24,13 @@ def get_file(compressed_file_path, url, config):
         print("Skipping existing file {}".format(compressed_file_path))
         return
     print("Downloading {}".format(compressed_file_path))
-    response_bytes = requests.get(url, stream=True).content
+    for i in range(10):   # Try ten times to download
+        try:
+            response_bytes = requests.get(url, stream=True).content
+            break
+        except requests.exceptions.ConnectionError:
+            print('Connection error')
+            time.sleep((i + 1) * 10)
     with gzip.open(compressed_file_path, 'wb') as f:
         f.write(response_bytes)
     time.sleep(0.5)
