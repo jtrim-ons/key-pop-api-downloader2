@@ -37,6 +37,15 @@ def get_file(compressed_file_path, url, config):
 
 
 def is_household_var(classification_code, all_classifications):
+    """Return True if and only if classification_code is for a household variable.
+
+    Parameters
+    ----------
+    classification_code : string
+        The variable's classification code
+    all_classifications : dict
+        A dictionary of information including population type for each classification code
+    """
     expected_result = any(
         classification_code.startswith(prefix)
         for prefix in [
@@ -49,10 +58,6 @@ def is_household_var(classification_code, all_classifications):
         # To be extra-cautious, we test it two ways and make sure they're consistent
         raise Exception('Unexpected is_household_var() result for ' + classification_code)
     return result
-
-
-def has_any_household_vars(classification_codes, all_classifications):
-    return any(is_household_var(c, all_classifications) for c in classification_codes)
 
 
 def get_files(num_vars, config):
@@ -71,10 +76,7 @@ def get_files(num_vars, config):
     for cc in input_classification_combinations:
         if num_vars > 0:
             c_str = ",".join(cc)
-            url = config["url_pattern"].format(
-                "UR_HH" if has_any_household_vars(cc, config["all_classifications"]) else "UR",
-                c_str
-            )
+            url = config["url_pattern"].format("UR", c_str)
             print(url)
             compressed_file_path = 'downloaded/{}var/{}.json.gz'.format(num_vars, c_str.replace(',', '-'))
             get_file(compressed_file_path, url, config)
@@ -84,7 +86,7 @@ def get_files(num_vars, config):
                 continue
             c_str = ",".join(list(cc) + [c])
             url = config["url_pattern"].format(
-                "UR_HH" if has_any_household_vars(list(cc) + [c], config["all_classifications"]) else "UR",
+                "UR_HH" if is_household_var(c, config["all_classifications"]) else "UR",
                 c_str
             )
             print(url)
