@@ -10,4 +10,3 @@ def create_json(input_filename, output_filename):
 
 
 create_json('input-txt-files/input-classifications.txt', 'generated/input-classifications.json')
-create_json('input-txt-files/output-classifications.txt', 'generated/output-classifications.json')

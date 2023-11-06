@@ -31,10 +31,13 @@ def load_all_classifications():
 def load_input_and_output_classification_codes():
     with open('input-txt-files/input-classifications.txt', 'r') as f:
         input_classifications = f.read().splitlines()
-    input_classifications.sort()
 
-    with open('input-txt-files/output-classifications.txt', 'r') as f:
-        output_classifications = f.read().splitlines()
+    with open('input-txt-files/output-classifications-with-details.json', 'r') as f:
+        output_classification_details = json.load(f)
+
+    output_classifications = [c["code"] for c in output_classification_details]
+
+    input_classifications.sort()
     output_classifications.sort()
 
     return input_classifications, output_classifications
