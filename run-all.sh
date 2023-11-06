@@ -27,6 +27,6 @@ python3 python-scripts/generate-files.py
 python3 python-scripts/generate-files-by-ltla.py
 python3 python-scripts/combine-jsons-for-bars-and-maps.py
 
-python3 python-scripts/create-var-code-jsons.py
+python3 python-scripts/create-metadata-json.py
 
 echo "All done!"
