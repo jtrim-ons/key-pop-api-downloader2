@@ -106,8 +106,6 @@ def sum_of_cell_values(dataset, cc, category_list, c, cell_ids):
         The total of the counts.
     """
     input_ages = input_age_range(cc, category_list)
-    if not nests_nicely(c, input_ages):
-        return 0
     total = 0
     for cell_id in cell_ids:
         if pgp.remove_classification_number(c) == "resident_age":
@@ -168,6 +166,10 @@ def generate_one_dataset(data, total_pops_data, cc, category_list):
         c = dataset['c']
         if dataset['data']['blocked']:
             result[c] = "blocked"
+            continue
+        input_ages = input_age_range(cc, category_list)
+        if not nests_nicely(c, input_ages):
+            result[c] = "unavailable_age_range"
             continue
         output_categories = output_classification_details_dict[c]['categories']
         result[c] = {"count": [], "percent": []}
